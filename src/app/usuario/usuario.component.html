@@ -1,0 +1,21 @@
+<p-panel header="Usuário">
+  <p-table [value]="usuarios" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Cod.</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Tipo</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-usu>
+      <tr>
+        <td>{{usu.id}}</td>
+        <td>{{usu.nome}}</td>
+        <td>{{usu.email}}</td>
+        <td>{{usu.tipoUsuario}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+</p-panel>
